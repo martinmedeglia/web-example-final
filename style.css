@@ -1,0 +1,142 @@
+/* Style.css */
+
+body {
+  background-color: #f4f4f4;
+}
+/* navbar style */
+.navbar-medeglia {
+  justify-content: space-between;
+  background: rgba(0,0,0,.9);
+}
+.navbar-medeglia .navbar-collapse {
+  flex-grow: 0;
+}
+#logo {
+  width: 40px;
+  margin-left: 10vh;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+#logo:hover {
+  color: rgba(250,250,250,0.9);
+  opacity: 1;
+}
+/* banner style */
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  height: 100vh;
+}
+.banner h1 {
+  margin: 0;
+  font-size: 32px;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-weight: bold;
+}
+.banner p {
+  font-size: 20px;
+  color: white;
+  opacity: .8;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+.banner .btn-ghost {
+  color: rgba(220,220,220,0.8);
+  border: 1px solid white;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: 300;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+.banner .btn-ghost:hover {
+  color: rgba(250,250,250,0.9);
+  opacity: 1;
+}
+.col-md-8 .btn-ghost {
+  color: rgba(50,50,50,0.8);
+  border: 1px solid black;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: 300;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+/* style of inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  border-radius: 10px;
+  background-color: rgb(50,100,220);
+  color: white;
+  padding: 12px 20px;
+  margin-top: 5px;
+  border: none;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: rgb(25,50,150);
+}
+/* style of the container/contact section */
+.container-contact {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+/* Smaller size of this container */
+#container-form {
+  text-align: left;
+  display: flex;
+  width: 100%;
+  margin-top: 6px;
+  padding: 0px;
+}
+/* footer style */
+.footer {
+  background: white;
+  border-top: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 0px 50px;
+  color: rgba(0,0,0,0.3);
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+.footer-links a {
+  color: black;
+  opacity: 0.15;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+.footer-links a:hover {
+  opacity: 1;
+}
+.footer .fa-heart {
+  color: #D23333;
+}
+
+/* footer behavior in tablets or smaller devices */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 580px) {
+  div p {
+    display: none;
+  }
+}
